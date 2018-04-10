@@ -16,13 +16,15 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid contentpage">
         <div class="row">
-            <div class="col-md-6">
-                <nav class="navbar navbar-default navbar-fixed-top">
-                    <div class="container-fluid">
+            <div class="col-md-12">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid ">
                         <ul class="nav nav-pills navbar-left">
-                            <li role="presentation" class="active" style="margin-top:5px;"><a href="index.html">WeatherPy</a></li>
+                            <li role="presentation" class="active">
+                                <a class="weatherpy" style="background-color: teal;" href="index.html">WeatherPy</a>
+                            </li>
                         </ul>
                         <ul class="nav navbar-nav  navbar-right">
                             <li class="dropdown">
@@ -41,9 +43,83 @@
                 </nav>
             </div>
         </div>
-    HOME PAGE
+        <!--<div class="row" style="margin-top:60px;"> needed if navbar is fixed-at-top-->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="whiteboxes">
+                            <h1 class="panelheaders"> WeatherPy Analysis Summary</h1>
+                            <hr>
+                                <a href="data.html">
+                                    <img align="left" src="./images/cities.png" class="img-responsive homepageimage" alt="Responsive image">
+                                </a>
+                                This project was done to get an idea of what the weather is like around the equator. 
+                                The objective is to visualize the weather of 500+ cities around the globe that are at varying 
+                                distances from the equator and to see how the certain weather paramenters like Temperature, Humidity, 
+                                Cloudiness and Wind Speeds change as we get closer to or away from the equator. 
+                                <br><br>
+                                We used <a href="http://www.numpy.org">Python's Numpy library</a>  to generate 600 random latitude and 
+                                logitude values to ensure that we have coordinate samples from all over the globe. Then we used the 
+                                <a href="https://pypi.python.org/pypi/citipy">Citipy library</a> to get the nearest
+                                city to each of the coordinates. We cleaned any duplicate cities, and used the 
+                                <a href="https://openweathermap.org/api">OpenWeatherMap API</a> to
+                                get the weather data for each city. The weather data wasn't available for some small/remote cities so 
+                                we skipped them as well. We generated about 600 city coordinates to ensure that after cleanup we
+                                have more than 500 cities. The image above shows all the cities as black dots on the map of the world
+                                so that we can see the distribution of the city data for our analysis.
+                                <br><br>
+                                Our overall conclusion was that cities closer to the equator are hotter than cities away from the 
+                                equator with more cities in the south of the equator being warmer. Proximity to the equator does 
+                                not affect other factors like Humidity, Cloudiness or Wind Speed as much as it affects the Temperature. 
+                                <br><br>
+                                To see all the details of the analysis you can click on the images shown on this page or navigate 
+                                through the various menu items on the top of the page.
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="whiteboxes">
+                                <h1 class="panelheaders">Visualizations</h1>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="plot-temperature.html">
+                                            <img src="./images/temperature.png" class="img-responsive " alt="Responsive image">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="plot-humidity.html">
+                                            <img src="./images/humidity.png" class="img-responsive " alt="Responsive image">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="plot-windspeed.html">
+                                            <img src="./images/windspeed.png" class="img-responsive " alt="Responsive image">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="plot-cloudiness.html">
+                                            <img src="./images/cloudiness.png" class="img-responsive " alt="Responsive image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bottompageline">
+        </div>
+        <div class="row footerbar">
+        </div>
     </div>
-
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     

@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Weatherpy Data</title>
+    <title>Weatherpy Dashboard</title>
 
     <!-- Bootstrap CSS and custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -16,32 +16,55 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid contentpage">
         <div class="row">
-                <div class="col-md-6">
-                    <nav class="navbar navbar-default navbar-fixed-top">
-                        <div class="container-fluid">
-                            <ul class="nav nav-pills navbar-left">
-                                <li role="presentation" class="active" style="margin-top:5px;"><a href="index.html">WeatherPy</a></li>
-                            </ul>
-                            <ul class="nav navbar-nav  navbar-right">
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <li><a href="plot-temperature.html">Temperature</a></li>
-                                    <li><a href="plot-humidity.html">Humidity</a></li>
-                                    <li><a href="plot-windspeed.html">Wind Speed</a></li>
-                                    <li><a href="plot-cloudiness.html">Cloudiness</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="comparisons.html">Comparison</a></li>
-                                <li><a href="data.html">Data</a></li>
-                            </ul>                        
+            <div class="col-md-12">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <ul class="nav nav-pills navbar-left">
+                            <li role="presentation" class="active" >
+                                <a class="weatherpy" style="background-color: teal;" href="index.html">WeatherPy</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav  navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="plot-temperature.html">Temperature</a></li>
+                                <li><a href="plot-humidity.html">Humidity</a></li>
+                                <li><a href="plot-windspeed.html">Wind Speed</a></li>
+                                <li><a href="plot-cloudiness.html">Cloudiness</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="comparisons.html">Comparison</a></li>
+                            <li><a href="data.html">Data</a></li>
+                        </ul>                        
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--<div class="row" style="margin-top:60px;"> needed if navbar is fixed-at-top-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default singlepanel">
+                    <div class="panel-body">
+                        <div class="whiteboxes">
+                            <h1 class="panelheaders">WeatherPy Data</h1>
+                            <hr>
+                            Here is a data that we generated from the api calls and we used for all of our
+                            Analysis for this project.
+                            <br>
+                            <br>
+                            <br>
                         </div>
-                    </nav>
+                    </div>
                 </div>
             </div>
-        DATA PAGE
+        </div>
+        <div class="row bottompageline">
+        </div>
+        <div class="row footerbar">
+        </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

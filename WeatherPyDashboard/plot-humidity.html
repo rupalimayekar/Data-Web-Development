@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>Weatherpy Humidity</title>
+    <title>Weatherpy Dashboard</title>
 
     <!-- Bootstrap CSS and custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -16,32 +16,95 @@
 </head>
 
 <body>
-    <div class="container-fluid">
-            <div class="row">
-                <div class="col-md-6">
-                    <nav class="navbar navbar-default navbar-fixed-top">
-                        <div class="container-fluid">
-                            <ul class="nav nav-pills navbar-left">
-                                <li role="presentation" class="active" style="margin-top:5px;"><a href="index.html">WeatherPy</a></li>
-                            </ul>
-                            <ul class="nav navbar-nav  navbar-right">
-                                <li class="dropdown">
-                                    <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                                    <li><a href="plot-temperature.html">Temperature</a></li>
-                                    <li><a href="plot-humidity.html">Humidity</a></li>
-                                    <li><a href="plot-windspeed.html">Wind Speed</a></li>
-                                    <li><a href="plot-cloudiness.html">Cloudiness</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="comparisons.html">Comparison</a></li>
-                                <li><a href="data.html">Data</a></li>
-                            </ul>                        
+    <div class="container-fluid contentpage">
+        <div class="row">
+            <div class="col-md-12">
+                <nav class="navbar navbar-default">
+                    <div class="container-fluid">
+                        <ul class="nav nav-pills navbar-left">
+                            <li role="presentation" class="active">
+                                <a class="weatherpy" style="background-color: teal;" href="index.html">WeatherPy</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav  navbar-right">
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Plots <span class="caret"></span></a>
+                                <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                <li><a href="plot-temperature.html">Temperature</a></li>
+                                <li><a href="plot-humidity.html">Humidity</a></li>
+                                <li><a href="plot-windspeed.html">Wind Speed</a></li>
+                                <li><a href="plot-cloudiness.html">Cloudiness</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="comparisons.html">Comparison</a></li>
+                            <li><a href="data.html">Data</a></li>
+                        </ul>                        
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <!--<div class="row" style="margin-top:60px;"> needed if navbar is fixed-at-top-->
+        <div class="row">
+            <div class="col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-body">
+                        <div class="whiteboxes">
+                            <h1 class="panelheaders"> Humidity vs. Latitude</h1>
+                            <hr>
+                            <img src="./images/humidity.png" class="img-responsive largeimage" alt="Responsive image">
+                            <div>
+                                <br><br>
+                                The above plot shows the humidity in the different cities as of the given date, as plotted
+                                against the latitude of that city. Humidity is measured as a % value.
+                                <br><br>    
+                                Our analysis shows that there are a lot more cities with humidity in the 60% to 100% range 
+                                around the globe. There are more cities in the southern hemisphere with humidity levels in the 
+                                20%-60% range than there are in the northern hemisphere.
+                            </div>
                         </div>
-                    </nav>
+                    </div>
                 </div>
             </div>
-            PLOT HUMIDITY PAGE
+            <div class="col-md-4">
+                <div class="panel panel-default">
+                        <div class="panel-body">
+                            <div class="whiteboxes">
+                                <h1 class="panelheaders">Visualizations</h1>
+                                <hr>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="plot-temperature.html">
+                                            <img src="./images/temperature.png" class="img-responsive " alt="Responsive image">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="plot-humidity.html">
+                                            <img src="./images/humidity.png" class="img-responsive " alt="Responsive image">
+                                        </a>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <a href="plot-windspeed.html">
+                                            <img src="./images/windspeed.png" class="img-responsive " alt="Responsive image">
+                                        </a>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <a href="plot-cloudiness.html">
+                                            <img src="./images/cloudiness.png" class="img-responsive " alt="Responsive image">
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bottompageline">
+        </div>
+        <div class="row footerbar">
+        </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->

@@ -1,6 +1,59 @@
-# CSS
+/* This is the CSS file fot the WeatherPy Dashboard*/
 
+/*For the main navigation menu on the top left for the home page*/
 .weatherpy {
     margin-top: 5px;
+    background-color: teal;
 }
-  
+
+/* For the fluid container used for the nav bar */
+.mynavbar {
+
+}
+
+/* For the background of the container page */
+.contentpage {
+    background-color: lightgrey;
+}
+
+/* for the content panels */
+.whiteboxes {
+    background-color: white;
+    padding: 5px;
+    margin: 20px;
+}
+
+/* For the headers in the panels */
+.panelheaders{
+    color: teal;
+}
+
+/* For the main image on the home page */
+.homepageimage {
+    width: 70%;
+    height: 70%;
+}
+
+/* for the horizontal line at the bottom of each page */
+.bottompageline {
+    height: 5px;
+    background-color: teal;
+}
+
+/* For the bottom of each page */
+.footerbar {
+    height: 40px;
+    background-color: gray;
+}
+
+/* For the images on the individual visualization page */
+.largeimage {
+    width: 150%;
+    height: 150%;   
+}
+
+/* For the comparison and data pages */
+.singlepanel {
+    padding: 20px;    
+    margin: 50px;
+}

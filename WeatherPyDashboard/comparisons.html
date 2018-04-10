@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
 
-    <title>WeatherPy Comparisons</title>
+    <title>Weatherpy Dashboard</title>
 
     <!-- Bootstrap CSS and custom CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" />
@@ -16,13 +16,15 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid contentpage">
         <div class="row">
-            <div class="col-md-6">
-                <nav class="navbar navbar-default navbar-fixed-top">
+            <div class="col-md-12">
+                <nav class="navbar navbar-default">
                     <div class="container-fluid">
                         <ul class="nav nav-pills navbar-left">
-                            <li role="presentation" class="active" style="margin-top:5px;"><a href="index.html">WeatherPy</a></li>
+                            <li role="presentation" class="active" >
+                                <a class="weatherpy" style="background-color: teal;" href="index.html">WeatherPy</a>
+                            </li>
                         </ul>
                         <ul class="nav navbar-nav  navbar-right">
                             <li class="dropdown">
@@ -41,7 +43,51 @@
                 </nav>
             </div>
         </div>
-        COMPARISONS PAGE
+        <!--<div class="row" style="margin-top:60px;"> needed if navbar is fixed-at-top-->
+        <div class="row">
+            <div class="col-md-12">
+                <div class="panel panel-default singlepanel">
+                    <div class="panel-body">
+                        <div class="whiteboxes">
+                            <h1 class="panelheaders">Latitude vs. X</h1>
+                            <hr>
+                            Here is a comparison of all the four weather parameters (Temperature, Humidity, Wind Speed and Cloudiness) for the cities around the globe, against the Latitude of that city. You can click on the individual plots to get an in depth analysis for that specific weather condition.
+                            <br>
+                            <br>
+                            <br>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="plot-temperature.html">
+                                        <img src="./images/temperature.png" class="img-responsive " alt="Responsive image">
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="plot-humidity.html">
+                                        <img src="./images/humidity.png" class="img-responsive " alt="Responsive image">
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <a href="plot-windspeed.html">
+                                        <img src="./images/windspeed.png" class="img-responsive " alt="Responsive image">
+                                    </a>
+                                </div>
+                                <div class="col-md-6">
+                                    <a href="plot-cloudiness.html">
+                                        <img src="./images/cloudiness.png" class="img-responsive " alt="Responsive image">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row bottompageline">
+        </div>
+        <div class="row footerbar">
+        </div>
     </div>
 
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
