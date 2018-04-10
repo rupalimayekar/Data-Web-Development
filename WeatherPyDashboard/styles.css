@@ -8,9 +8,19 @@
 
 /* For the fluid container used for the nav bar */
 .mynavbar {
-
+    margin-left: -20px;
+    margin-right: -20px;
 }
 
+/* For the nav links on the top right*/
+.myrightnavbar {
+    margin-right: 10px;
+}
+
+/* For the Weatherpy button on the top left*/
+.myleftnavbar {
+    margin-left: 10px;
+}
 /* For the background of the container page */
 .contentpage {
     background-color: lightgrey;
