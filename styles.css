@@ -70,8 +70,8 @@
 }
 
 /* Changing the main nav menu color to teal for small screen */
-@media (max-width: 480px) {    
-    
+@media (max-width: 768px) {    
+
     /* For the Weatherpy button on the top left*/
     .myleftnavbar {
         background-color: teal;
