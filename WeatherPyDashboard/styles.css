@@ -8,8 +8,8 @@
 
 /* For the fluid container used for the nav bar */
 .mynavbar {
-    margin-left: -20px;
-    margin-right: -20px;
+    margin-left: -15px;
+    margin-right: -15px;
 }
 
 /* For the nav links on the top right*/
@@ -21,6 +21,7 @@
 .myleftnavbar {
     margin-left: 10px;
 }
+
 /* For the background of the container page */
 .contentpage {
     background-color: lightgrey;
@@ -66,4 +67,16 @@
 .singlepanel {
     padding: 20px;    
     margin: 50px;
+}
+
+/* Changing the main nav menu color to teal for small screen */
+@media (max-width: 480px) {    
+    
+    /* For the Weatherpy button on the top left*/
+    .myleftnavbar {
+        background-color: teal;
+        margin-left: -15px;
+        margin-right: -15px;
+    }
+    
 }
