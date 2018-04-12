@@ -39,7 +39,7 @@ We loop through all the cities in our data set and make an api call to the OpenW
 ### Graphical Analysis
 We then plot all the weather parameters against the laditudes of the cities on scatter plots to analyze each parameter and its variation as per the proximity to the equator.
 
-To see all the graphs and analysis check out the [WeatherPy-Web Page](file:///Users/rupali/GitHub/WeatherPy-Web/index.html)
+To see all the graphs and analysis check out the [WeatherPy-Web Page](https://rupalimayekar.github.io/WeatherPy-Web/)
 
 
 
